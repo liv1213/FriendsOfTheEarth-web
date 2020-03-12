@@ -1,0 +1,21 @@
+.doing-icons {
+    display: flex;
+    justify-content: space-around;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.doing-icons img {
+    width: 180px;
+    padding-top: 30px;
+}
+
+.doing-icons-3 {
+    @include mobile {
+        padding-bottom: 50px;
+    }
+}

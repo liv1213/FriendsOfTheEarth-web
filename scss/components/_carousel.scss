@@ -1,0 +1,21 @@
+
+
+.carousel {
+    margin: 0 auto;
+    width:800px;
+    height: 300px;
+    display: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include mobile {
+     display: none;
+    }
+  
+  }
+  .carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+    width: 700px;
+   
+  }
+

@@ -1,0 +1,43 @@
+// footer
+
+
+.foot {
+    background-color: #9ccd77;
+    margin-top: 0%;
+    padding-top: 50px;
+    @include mobile {
+        padding-top: 20px;
+    }
+}
+
+.foot-content {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    @include mobile {
+        text-align: center;
+        padding-bottom: 0%;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.foot-social{
+    padding-right: 100px;
+    padding-top: 30px;
+    @include mobile {
+        padding-right: 0px;
+    }
+}
+
+.foot-contacts {
+    padding-top: 30px;
+}
+
+
+
+

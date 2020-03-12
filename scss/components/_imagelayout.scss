@@ -1,0 +1,70 @@
+
+// index 1
+
+// image layout 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 200px;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+   }
+}
+
+
+
+
+.column {
+    flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+    @include mobile {
+      width: 405px;
+      height:30vw;
+      margin-top: 10px;
+    }
+  }
+
+
+
+  .column-item span {
+    position: absolute;
+    right: 908px;
+    left: 172px;
+    top: 2028px;
+    @include mobile {
+      display: none;
+   }
+  }
+
+
+
+  .column-item h1:hover{
+      color: rgb(170, 170, 170);
+      cursor: pointer;
+  }
+
+
+
+  .news{
+      display: flex;
+      justify-content: center;
+  }
+
+  
+  .news:hover {
+      color: grey;
+      cursor: pointer;
+  }
+
+  

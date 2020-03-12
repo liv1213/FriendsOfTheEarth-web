@@ -1,0 +1,202 @@
+// navbar
+
+.container-logo img {
+  width: 180px;
+ @include mobile {
+   position: absolute;
+   left: 220px;
+ }
+}
+
+.container {
+  display: flex;
+justify-content: space-between;
+
+}
+
+.container-search {
+    padding-top: 50px;
+    @include mobile {
+      display: none;
+    }
+}
+
+
+
+.searchbar::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    /* transition: 0.2s; */
+}
+
+.searchbar:focus {
+    width: 400px;
+    font-size: 1em;
+    transition: 0.3s;
+    /* Stops the input box from inheriting the styling from the inputs on the request form */
+    border-bottom: rgb(0, 0, 0) solid 2px;
+    outline: none;
+}
+
+.btn-search {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+    font-size: 1.5em;
+    padding-top: 5px;
+    margin-right: 40px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    @include mobile {
+      display: none;
+    }
+  }
+  
+
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+   color: grey;
+   cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+  // index 3 nav jump
+
+.navjump {
+  display: flex;
+  justify-content: center;
+  background-color: #9ccd77;
+  @include mobile {
+    display: none;
+  }
+}
+
+
+.navjump a:hover {
+  color:white;
+  cursor: pointer;
+ }
+
+
+
+//  mobile nav
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9ccd77;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  padding-left: 20px;
+  font-size: 60px;
+}
+
+.overlay-drop-down{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  padding-left: 0%;
+ height: 0;
+ overflow-y: hidden;
+ transition: height .5s ease;
+
+  
+}
+.overlay-drop-down a {
+  font-size: 25px;
+  font-family: 'Cabin', sans-serif; 
+}
+#MENU {
+  font-size: 30px;
+    cursor: pointer; 
+    position: fixed;
+    top: 0%;
+    margin: 10px;
+}
+
+
+
+
+
+@include desktop {
+  .overlay{
+   display:none;
+  } 
+  #MENU {
+    display: none;
+  }
+ }
+ 
+ @include mobile {
+   .overlay{
+    display:block;
+   } 
+   #MENU {
+     display: block;
+   }
+   .navbar {
+     display: none;
+       }
+  }

@@ -1,0 +1,46 @@
+
+// index 1
+
+// mission
+
+.mission {
+    background-color: #9ccd77;
+}
+
+.mission-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    @include mobile {
+        padding-bottom: 0px;
+    }
+}
+
+
+.mission-elements {
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+@include mobile {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+}
+
+}
+
+.mission-elements img {
+    width: 200px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+    @include mobile {
+        padding-left: 0px;
+        width: 150px;
+        padding-bottom: 20px;
+    }
+}
+
+
+

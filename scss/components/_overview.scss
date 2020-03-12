@@ -1,0 +1,26 @@
+// overview 
+
+.overview {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 300px;
+    padding-left: 100px;
+    padding-top: 100px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 30px 0px 30px;
+        }
+    }
+
+.overview-content {
+    font-family: 'Cabin', sans-serif;   
+    line-height: 30px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    @include mobile {
+        padding: 0px;
+    }
+}

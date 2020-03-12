@@ -1,0 +1,128 @@
+
+// Index 1
+
+.hero {
+    background-image: url('../../image/b.png');
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    @include mobile {
+      display: none;
+    }
+}
+
+.hero-element {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 450px;
+    padding-left: 90px;
+}
+
+
+.heading {
+    position: absolute;
+    top: 350px;
+    left: 90px;
+    @include mobile {
+       background-image: url('../../image/b.png');
+       display: flex;
+       flex-direction: column;
+       position: static;
+       width: 100%;
+       padding-top: 220px;
+       padding-bottom: 150px;
+       text-align: center;
+       .hero-button{
+        display: block !important;
+        margin-right: 60px;
+        margin-left: 60px;
+       } 
+    }
+    @include desktop {
+       .hero-button{
+        display: none;
+       } 
+    }
+}
+
+
+
+
+
+// index 2
+
+
+.what {
+    background-color: #9ccd77;
+    @include mobile {
+       background-color: white;
+    }
+}
+
+.What-do h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0px;
+    @include mobile {
+        padding-top: 250px;
+      
+    }
+}
+
+.What-do p {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding-bottom: 50px;
+  
+}
+
+
+
+.What-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 400px;
+    padding-left: 400px;
+    font-size: 20px;
+    padding-bottom: 100px;
+    @include mobile {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+    }
+}
+
+
+
+// index 3
+
+.head {
+    background-image: url('../../image/iceberg.jpg');
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    @include mobile {
+        padding-bottom: 150px;
+    }
+}
+
+.head-elements h1{
+    display: flex;
+    justify-content: center;  
+    padding-top: 250px;
+    margin-top: 0px;
+    @include mobile {
+        padding-top: 250px;
+    }
+}
+
+.head-elements p {
+    display: flex;
+    justify-content: center;
+    @include mobile {
+        margin-top: 70px;
+    }
+}

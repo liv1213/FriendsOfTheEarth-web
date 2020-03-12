@@ -1,0 +1,58 @@
+// abstracts
+@import './abstracts/placeholders';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/mixins';
+
+
+
+//base
+@import './base/typography';
+@import './base/headings';
+@import './base/reset';
+
+
+
+
+//components
+@import './components/carousel';
+@import './components/buttons';
+@import './components/imagelayout';
+@import './components/overview';
+@import './components/helpelements';
+@import './components/icons';
+
+// layout
+@import './layout/headers';
+@import './layout/footer';
+@import './layout/navigation';
+@import './layout/mission';
+@import './layout/cards';
+@import './layout/signup';
+
+
+// helpers
+@import './helpers/slidedown';
+
+// vendors 
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

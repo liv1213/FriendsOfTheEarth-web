@@ -1,0 +1,60 @@
+// index 3 
+// help elements
+.help {
+    background-color: #9ccd77;
+}
+
+.help-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.help-elements-1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 20px;
+    border: solid 1px black;
+    @include mobile {
+        padding: 0px;
+        border: none;
+        margin:0px;
+    }
+    }
+    
+    .help-elements-2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px;
+    border: solid 1px black;
+    @include mobile {
+        padding: 0px;
+        border: none;
+        margin:0px;
+    }
+    }
+
+
+
+    #action {
+        color: white;
+        font-family: 'Cabin', sans-serif; 
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    
+    #action:hover{
+        cursor: pointer;
+        color: grey;
+    }   
